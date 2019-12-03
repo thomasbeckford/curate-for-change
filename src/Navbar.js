@@ -22,10 +22,10 @@ export default class Navbar extends Component {
   render() {
 
   const navigation = [
-    {id: 0, name: 'About Us', url: 'aboutus'},
-    {id: 1, name: 'Why', url: 'why'},
-    {id: 2, name: 'How', url: 'how'},
-    {id: 3, name: 'Contact Us', url: 'contactus'}
+    {id: 0, name: 'about us', url: 'aboutus'},
+    {id: 1, name: 'why', url: 'why'},
+    {id: 2, name: 'how', url: 'how'},
+    {id: 3, name: 'contact us', url: 'contactus'}
   ]
 
     return (

@@ -1,45 +1,223 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+/*****************************************
+   ++++++++++++++++++++++++++++++++++++
+   + Author: Thomas Edmundo Beckford  +
+   + 2019                             + 
+   ++++++++++++++++++++++++++++++++++++
+  
+  + normalize.scss 
+  + navbar.scss
+  + ownsheet.scss
+  
+  1. Nav
+
+*******************************************/
+
+$blue: #548cd1;
+$teal: #33b7bf;
+$purple: #5b54d1;
 
 * {
-    margin: 0 auto; 
-    box-sizing: border-box;
-    font-weight: 100;
-    font-family: 'Source Sans Pro';
-    text-rendering: geometricPrecision;
-    -webkit-font-smoothing: antialiased;
-}
-body {
-    color: #606060;
+  margin: 0 auto; 
+  box-sizing: border-box;
+  font-weight: 100;
+  // font-family: 'Muli', sans-serif;
+
 }
 
-.main-flex-center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+html { 
+   scroll-behavior: smooth;
 }
 
-.main-flex-center .logo{
-  width: 250px;
+ul { list-style-type: none;  }
+li{font-size: 27px!important}
+a:link {text-decoration: none;}
+
+.cont{
+  padding: 0px;width: 90%; margin: 0 auto;
 }
 
-.main-paragraph{
-  margin-top: 100px;
+section{
+  height: auto;
+  margin-bottom: 30vh;
   text-align: center;
-  line-height: 1.75;
-  
-  .title{
-    font-size: 60px;
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
+  h1{ text-align: right; font-size: 10em; line-height: 112px; padding-top: 100px }
+  h2{ font-size: 4em; margin: 5px }
+  p{ font-size: 27px }
+}
 
+p{font-size: 36px!important}
+
+.contactus{
+  margin-bottom: 0vh;
+
+}
+
+.title{
+  font-weight: bold
+}
+
+.home{
+  h1{
+    font-weight: bold
+  }
+}
+
+.howtoapply{
+
+  li{font-size: 18px}
+}
+
+.margin-left-15{
+  margin-left: 15px;
+}
+
+.margin-left-15{
+  margin-right: 15px;
+}
+
+.margin-top-150{
+  margin-top: 150px
+}
+
+.margin-top-300{
+  margin-top: 300px;
+}
+
+.padding-top-300{
+  padding-top: 100px;
+}
+
+.guests{
+  margin: 0px;
+  h2{
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
   p{
-    font-size: 25px
+    font-size: 20px;
+    text-align:center;
+  }
+
+}
+
+.justify-no{
+  justify-content: unset !important;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+
+.arrow-down{
+  margin-top: 30vh;
+  animation: 5s infinite;
+  a { color: #555 }
+}
+
+.flex{
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+
+
+  div{
+  display: flex; 
+  flex-basis: calc(45% - 14px);  
+  
+  flex-direction: column;
+
+    p{
+
+      font-size: 17px;
+
+    }
   }
 }
 
-.height-100{
-  height: 100vh
+
+/* Mobile portrait */
+@media screen and (max-width: 770px) {
+  section{ 
+    h1{ font-size: 7rem; line-height: 70px; }
+    h2{ font-size: 4em; margin: 0px }
+    p{ font-size: 27px;margin: 0px; }
+
+    .overlay ul li a { font-size: 10px; }
+  }
+
+    .flex{
+      min-height: 100%;
+      display: block;
+      width: 100%;
+      div{ margin-top: 20px;
+        p{ font-size: 17px;} 
+      }
+    }
+
+
+    .wrp{display: block; width: 100%!important;}
+
+ }
+/* Mobile portrait */
+@media screen and (max-width: 600px) {
+  section{ 
+    h1{ font-size: 7rem; line-height: 70px; }
+    h2{ font-size: 4em; margin: 0px }
+    p{ font-size: 27px;margin: 0px; }
+    .overlay ul li a { font-size: 10px; }
+  }
+.wrp{display: block; width: 100%!important;}
+ }  
+
+ 
+/* Mobile portrait */
+@media screen and (max-width: 500px) {
+  section{ 
+    h1{ font-size: 5rem; line-height: 50px; }
+    h2{ font-size: 2em; margin: 0px }
+    p{ font-size: 17px;margin: 0px; }
+    .overlay ul li a { font-size: 10px; }
+  }
+
+.wrp{display: block; width: 100%!important;}
+
+
+ }
+
+
+
+
+/* Mobile portrait */
+@media screen and (max-width: 400) {
+  section{ 
+    h1{ font-size: 3rem; line-height: 50px; }
+    h2{ font-size: 1em; margin: 0px }
+    p{ font-size: 17px;margin: 0px; }
+    .overlay ul li a { font-size: 10px; }
+
+
+  }
+.wrp{display: block; width: 100%!important;}
+
+ }
+
+
+
+
+
+.wrp{
+  width:50%;
+  display: inline-block;
+  vertical-align: top
 }
+
+
+ .week-p{
+    font-size: 21px;
+    text-align: left;
+ }
+
