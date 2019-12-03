@@ -17,18 +17,25 @@ export default class App extends React.Component {
     <div className="App cont">
       <div className="background">
           <Navbar />
+          
           <section id="home" className="home">
-          <ScrollAnimation animateIn='bounceInRight' animateOut='bounceOutLeft'>
-            <h1 className="title">curate <br/> for <br/> change</h1> 
-          </ScrollAnimation>
-            <div className='arrow-down' >
+          
+          <ScrollAnimation animateIn='bounceInRight' animateOut='bounceOutLeft'>  
+            <div className='logo'>
+              <img width='250px' src={logo} alt="curate"/>
+            </div>
+          </ScrollAnimation>    
+          
+
+
+          
+                      <div className='arrow-down' >
               <a href='#aboutus'>
                 <i className='animated pulse infinite fas fa-angle-double-down'style={{fontSize:'48px'}}></i>
               </a>
             </div>
-
           </section>
-
+          
 
           <section id="aboutus" className="aboutus padding-top-300">
             <h2 className="title">about us</h2><br/>
